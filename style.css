@@ -1,162 +1,258 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-header {
-    display: grid;
-    grid-template-areas: "logo . . nav";
-    padding: 2%;
-    height: 10vh;
-}
-
-header h1 {
-    grid-area: logo;
-    justify-self: center;
-    align-self: center;
-    animation: color-change 10s ease-in infinite;
-    transition: font-size 0.5s ease-in-out;
-}
-
-header h1:hover {
-    font-size: 2.2em;
-}
-
-nav {
-    grid-area: nav;
-    justify-self: center;
-    align-self: center;
-    width: 30vw;
-}
-
-nav a {
-    padding: 1% 5%;
-    text-decoration: none;
-    font-weight: 700;
-    animation: color-change 10s ease-in infinite;
-    transition: font-size 0.5s ease-in;
-}
-
-nav a:hover {
-    font-size: 1.1em;
-}
-
-@keyframes color-change {
-    0% {
-        color: red;
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans', sans-serif;
     }
-    50% {
-        color: blue;
+    
+    header {
+        display: grid;
+        grid-template-areas: "logo . . nav";
+        padding: 2%;
+        height: 10vh;
     }
-    100% {
-        color: red;
+    
+    header h1 {
+        grid-area: logo;
+        justify-self: center;
+        align-self: center;
+        animation: color-change 10s ease-in infinite;
+        transition: font-size 0.5s ease-in-out;
     }
-}
-
-main {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    color: white;
-    height: 50vh;
-    background: linear-gradient(130deg, red, blue);
-    background-size: 1200% 1200%;
-    justify-content: center;
-    align-items: center;
-    -webkit-animation: Animation 10s ease-in infinite;
-    -moz-animation: Animation 10s ease-in infinite;
-    animation: Animation 10s ease-in infinite;
-}
-
-main p {
-    font-size: 2.5em;
-}
-
-.social {
-    grid-column: 1 / span 1;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-}
-
-.social i {
-    padding: 5% 0;
-    transition: font-size 0.5s ease-in;
-}
-
-.social i:hover {
-    font-size: 2.5em;
-}
-
-@-webkit-keyframes Animation {
-    0% {
-        background-position: 10% 0%
+    
+    header h1:hover {
+        font-size: 2.2em;
     }
-    50% {
-        background-position: 50% 50%
+    
+    nav {
+        grid-area: nav;
+        justify-self: center;
+        align-self: center;
+        width: 30vw;
     }
-    100% {
-        background-position: 100% 100%
+    
+    nav a {
+        padding: 1% 5%;
+        text-decoration: none;
+        font-weight: 700;
+        animation: color-change 10s ease-in infinite;
+        transition: font-size 0.5s ease-in;
     }
-}
-
-@-moz-keyframes Animation {
-    0% {
-        background-position: 10% 0%
+    
+    nav a:hover {
+        font-size: 1.1em;
     }
-    50% {
-        background-position: 91% 100%
+    
+    @keyframes color-change {
+        0% {
+            color: red;
+        }
+        50% {
+            color: blue;
+        }
+        100% {
+            color: red;
+        }
     }
-    100% {
-        background-position: 10% 0%
+    
+    @keyframes stars {
+        0% {
+            color: orange;
+        }
+        50% {
+            color: orangered;
+        }
+        100% {
+            color: orange;
+        }
     }
-}
-
-@keyframes Animation {
-    0% {
-        background-position: 10% 0%
+    
+    main {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        color: white;
+        height: 50vh;
+        background: linear-gradient(130deg, red, blue);
+        background-size: 1200% 1200%;
+        justify-content: center;
+        align-items: center;
+        -webkit-animation: Animation 10s ease-in infinite;
+        -moz-animation: Animation 10s ease-in infinite;
+        animation: Animation 10s ease-in infinite;
     }
-    50% {
-        background-position: 91% 100%
+    
+    main p {
+        font-size: 2.5em;
     }
-    100% {
-        background-position: 10% 0%
+    
+    .social {
+        grid-column: 1 / span 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
     }
-}
-
-.info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    padding: 30px;
-}
-
-section {
-    grid-column: 1/span 1;
-}
-
-article {
-    grid-column: 2/span 1;
-}
-
-aside {
-    grid-column: 3/span 1;
-}
-
-article ul {
-    list-style-type: none;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 10vh;
-    background: linear-gradient(130deg, red, blue);
-    background-size: 800% 800%;
-    -webkit-animation: Animation 10s ease-in infinite;
-    -moz-animation: Animation 10s ease-in infinite;
-    animation: Animation 10s ease-in infinite;
-}
+    
+    a {
+        color: white;
+    }
+    
+    .social a i {
+        padding: 5% 0;
+        transition: font-size 0.5s ease-in;
+    }
+    
+    .social a i:hover {
+        font-size: 2.5em;
+    }
+    
+    @-webkit-keyframes Animation {
+        0% {
+            background-position: 10% 0%
+        }
+        50% {
+            background-position: 50% 50%
+        }
+        100% {
+            background-position: 100% 100%
+        }
+    }
+    
+    @-moz-keyframes Animation {
+        0% {
+            background-position: 10% 0%
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0%
+        }
+    }
+    
+    @keyframes Animation {
+        0% {
+            background-position: 10% 0%
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0%
+        }
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+        padding: 30px;
+        color: white;
+        background-color: rgba(0, 128, 128, 0.7);
+    }
+    
+    section {
+        grid-column: 1/span 1;
+    }
+    
+    section h2,
+    aside h2,
+    article h2 {
+        animation: color-change 10s ease-in infinite;
+    }
+    
+    span {
+        animation: stars 1s ease-in infinite;
+    }
+    
+    tr:hover,
+    td:hover {
+        animation: stars 5s ease-in infinite;
+    }
+    
+    section p,
+    aside li,
+    article ul {
+        padding: 10%;
+    }
+    
+    section,
+    aside,
+    article {
+        text-align: center;
+    }
+    
+    article {
+        grid-column: 2/span 1;
+    }
+    
+    table .fab {
+        padding-right: 20px;
+    }
+    
+    aside {
+        grid-column: 3/span 1;
+    }
+    
+    aside p {
+        margin-top: 20%;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 10vh;
+        background: linear-gradient(130deg, red, blue);
+        background-size: 800% 800%;
+        -webkit-animation: Animation 10s ease-in infinite;
+        -moz-animation: Animation 10s ease-in infinite;
+        animation: Animation 10s ease-in infinite;
+    }
+    
+    @media only screen and (max-width: 975px) {
+        /* .info {
+            background-color: white;
+        } */
+        nav {
+            width: 100%;
+        }
+        nav a {
+            padding: 5px;
+        }
+    }
+    
+    @media only screen and (max-width: 845px) {
+        .info {
+            display: block;
+            text-align: center;
+            font-size: 2em;
+        }
+        section {
+            display: block;
+        }
+        article {
+            display: block;
+        }
+        article table {
+            margin: auto;
+            padding-top: 10%;
+        }
+        aside {
+            display: block;
+            padding-top: 10%;
+        }
+        aside p {
+            padding-bottom: 30%;
+        }
+    }
+    
+    @media only screen and (max-width: 520px) {
+        header {
+            font-size: 0.7em;
+        }
+        main p {
+            text-align: left;
+            padding: 5px;
+        }
+    }
